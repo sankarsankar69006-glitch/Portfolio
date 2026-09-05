@@ -11,46 +11,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
+
+
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".main-navbar");
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+
+
+
 <body>
 
     <header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: white;"><i class="fa-solid fa-laptop-code lapcode"></i>Sankar S</a>
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-laptop-code lapcode"></i>Sankar S</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">About</a>
+          <a class="nav-link" aria-current="page" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Skills</a>
+          <a class="nav-link" aria-current="page" href="#skills">Skills</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Project</a>
+          <a class="nav-link" aria-current="page" href="#project">Project</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Education</a>
+          <a class="nav-link" aria-current="page" href="#education">Education</a>
         </li>        
                 <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Certification</a>
+          <a class="nav-link" aria-current="page" href="#certification">Certification</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Contact</a>
+          <a class="nav-link" aria-current="page" href="#contact">Contact</a>
         </li>
-        <button class="active2">Download CV</button>
+        <a href="./assets/Sankar_Web.pdf" download="Sankar_Web.pdf" class="active2">Download CV</a>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid intro">
+
+<!-- introduction -->
+
+<div class="container-fluid intro" id="home">
     <div class="row">
 
         <!--Text -->
@@ -69,8 +91,6 @@
             <i class="fa-brands fa-instagram"></i>
             </div>
 
-
-
             
         </div>
 
@@ -79,7 +99,10 @@
 </div>
 
 
-<h4 class="about-me">ABOUT ME</h4>
+
+<!-- About Section -->
+
+<h4 class="about-me " id="about">ABOUT ME</h4>
 <h4 class="passionate">Passionate about developing responsive and user-friendly web applications</h4>
 
 <div class="card about-card mb-3">
@@ -87,9 +110,7 @@
 
         <!-- Image -->
         <div class="col-md-3 about-image">
-            <img src="./assets/sankar.png"
-                 class="img-fluid"
-                 alt="Sankar">
+            <img src="./assets/sankar.png" class="img-fluid" alt="Sankar">
         </div>
 
         <!-- Content -->
@@ -164,14 +185,16 @@
     </div>
 </div>
 
-      </div>
-    </div>
-  </div>
-</div>
 
 
-<h4 class="about-me">MY SKILLS</h4>
+<!-- Skill Section -->
+
+
+<h4 class="about-me" id="skills">MY SKILLS</h4>
 <h4 class="passionate">Technologies and tools I work with</h4>
+
+
+<div class="skill-container">
 
 <div class="Parent-div">
 <div class="child-div">
@@ -239,12 +262,14 @@
 <div class="skill-line spring-line"></div>
 
 </div>
-
+</div>
 </div>
 
 
 
-<h4 class="about-me">MY PROJECT</h4>
+<!-- Project Section -->
+
+<h4 class="about-me" id="project">MY PROJECT</h4>
 <h4 class="passionate">Some projects I've built with passion and creativity</h4>
 
 
@@ -277,8 +302,104 @@
 
 
 
+<!-- Eduction Section -->
 
+<h4 class="about-me" id="education">EDUCATION</h4>
+<h4 class="passionate"><i class="fa-solid fa-graduation-cap degree"></i> Journey of Knowledge</h4>
+
+
+<div class="Parent-Education">
+
+
+<div class="child-Education">
+        
+<h5>Bachelor of Engineering</h5>
+<span style="font-weight: bold;">Computer Science and Engineering</span>
+<p>2023 - 2026</p>
+<p>Sri Raaja Raajan College of Engineering and Technologies, Amaravathipudhur (Anna University)</p>
+<p>During my college journey, I gained both theoretical knowledge and practical understanding of computer science. I learned programming concepts, data structures, database management, web technologies, software development methodologies, and object-oriented programming.</p>
+</div>
+
+
+
+    <div class="child-Education">
+<h5>Diploma in Engineering</h5>
+<span style="font-weight: bold;">DECE</span>
+<p>2015 - 2018</p>
+<p>Alagappa Polytechnic college of Engineering, Karaikudi</p>
+<p>During my college journey, I developed a strong theoretical foundation in Electronics and Communication Engineering. I gained knowledge in Electronic Devices and Circuits, Digital Electronics, Communication Systems</p>
+</div>
+
+</div>
+
+
+
+<!-- Certification Section -->
+
+<h4 class="about-me" id="certification">Certification</h4>
+<h4 class="passionate">My Learning & Achievements Journey</h4>
+
+
+<div class="parent-certificate">
+    <div class="child-certificate">
+        <h4>Java Full Stack Developer</h4>
+        <span>Login 360<sup>o</sup>, Chennai</span>
+        <div class="date">On going</div>
+        <p>Professional training in Java Full Stack Development, covering Core Java, Object-Oriented Programming, SQL, HTML, CSS, JavaScript, Spring Boot, and React.</p>
+    </div>
+
+    <div class="child-certificate">
+        <h4>Python Web Development Internship program</h4>
+        <span>Marz Technologies, Karaikudi</span>
+        <div><i class="fa-regular fa-calendar-days"></i> 04 July 2025 - 24 July 2025</div>
+        <p>Completed a Python Web Development Internship with practical experience in Python, Django, and JavaScript. Developed a To-Do List application implementing CRUD functionalities including add, view, edit, and delete operations.</p>
+    </div>
+
+    <div class="child-certificate">
+        <h4>C, C++</h4>
+        <span>Computer , Karaikudi</span>
+        <div><i class="fa-regular fa-calendar-days"></i> 01 Sep 2022 - 30 Nov 2022</div>
+        <p>Developed a strong foundation in C and C++ programming, focusing on programming fundamentals, object-oriented concepts, data structures, and problem-solving skills.</p>
+    </div>
+
+</div>
+
+
+<!-- Footer Section -->
+
+<footer>
+    <div class="touch-home" id="contact">
+        <p>LET'S CONNECT</p>
+        <a href="#home">Get in touch</a>
+        <p>Have a project in mind or looking for a passionate developer? Feel free to get in touch with me. I’m always open to discussing new opportunities, projects, and collaborations.</p>
+    </div>
+
+
+
+    <div class="contact-detail">
+
+        <a href="mailto:sankarsankar69006@gmail.com"><i class="fa-regular fa-envelope details-icon"></i> sankarsankar69006@gmail.com</a>
+        <a href="tel:8754295139"><i class="fa-solid fa-phone details-icon"></i> +91 8754295139</a>
+        <a href="https://maps.app.goo.gl/xyozUHNqn9BR9fVt5"><i class="fa-solid fa-location-dot details-icon"></i> Chennai, Tamilnadu, India</a>
+        <a href="https://www.linkedin.com/in/sankar1704"><i class="fa-brands fa-linkedin details-icon"></i>Linkedin</a>
+        <a href="https://github.com/sankarsankar69006-glitch"><i class="fa-brands fa-github details-icon"></i>Github</a>
+        
+        
+    </div>
+
+
+
+    <div class="forms">
+<form action="">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+</form>
+    </div>
+</footer>
 
 </header>
+
 </body>
 </html>
