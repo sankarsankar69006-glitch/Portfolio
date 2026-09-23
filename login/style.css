@@ -1,0 +1,128 @@
+*{
+    background-color: rgb(255, 255, 238);
+}
+/* Header */
+.navbar{
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* Home, About,contact,service, */
+.Links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 27px;   
+}
+/* remove the underline link */
+.Links a{
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+.title span {
+    color: orangered;
+}
+
+
+
+
+
+.Course {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Course-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    width: 150px;
+    padding: 40px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px gray;
+}
+
+.Course-card:hover{
+    box-shadow: 0 0 10px gray;
+}
+
+
+.Course-card img {
+    height: 150px;
+    width: 150px;
+    
+}
+
+.Course-card p:first-of-type {
+    color: orangered;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Course-card p:last-of-type {
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Course-card button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     white-space: nowrap;
+}
+button:hover{
+    background-color: rgb(149, 236, 61);
+    color: rgb(2, 88, 88);
+}
+
+.Course-card .fa-star {
+    font-size: 15px;
+    color: lightgray;
+    margin-top: 20px ;
+}
+.Course-card .fa-star.active{
+    color: rgb(253, 184, 55);
+}
+
+
+.Course-card .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-size: 15px;
+    color: gray;
+}
+
+.fa-heart:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+
